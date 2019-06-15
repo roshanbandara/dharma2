@@ -141,52 +141,16 @@ li{
 	list-style: none;
 }
 
-.header {
-background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/01.jpg);
-	background-size: cover;
-	background-position: top center;
-	/*padding: 8rem;*/
-	/*margin-bottom: 4rem;*/
-
-	display: grid;
-	grid-template-rows: 75vh;
-	text-align: center;
-	color: #fff;
-	font-size: 4.5rem;
-	margin-top: 5rem;
-	/*align-self: center;*/
-	justify-content: center;
-
-}
-
-.header__content {
-	display: grid;
-	grid-template-columns: 90vw;
-	align-content: end;
-	line-height: 1;
-	grid-row-gap: 2rem;
-	margin-bottom: 10vw;
-}
-
-.heading-3 {
-	font-size: 2.4rem;
-	}
-
-.header__logo {
-	width: 10rem;
-	justify-self: center;
-}
-
 /* Create a sticky/fixed navbar */
 
 #navbar {
-	display: grid;
-	/*grid-template-columns: 50% 1fr;*/
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
-	/*grid-template-rows: 10rem;*/
+  display: grid;
+  /*grid-template-columns: 50% 1fr;*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+  /*grid-template-rows: 10rem;*/
   /*overflow: hidden;*/
   background-color: #f1f1f1;
-  padding: 15px 10px; /* Large padding which will shrink on scroll (using JS) */
+  padding: 0 10px; /* Large padding which will shrink on scroll (using JS) */
   transition: 0.4s; /* Adds a transition effect when the padding is decreased */
   position: fixed;  /*Sticky/fixed navbar */
   width: 100%;
@@ -234,7 +198,7 @@ background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../
   /*float: right;*/
   display: grid;
   /*width: 30%;*/
-  grid-template-columns: repeat(4, max-content);
+  grid-template-columns: repeat(5, max-content);
   /*grid-template-rows: 3rem;*/
   justify-content: end;
   align-content: center;
@@ -243,7 +207,62 @@ background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../
 }
 
 #logo {
-	justify-self: start;
+  justify-self: start;
+}
+
+
+.header {
+background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/01.jpg);
+	background-size: cover;
+	background-position: top center;
+	/*padding: 8rem;*/
+	/*margin-bottom: 4rem;*/
+
+	display: grid;
+	grid-template-rows: 75vh;
+	text-align: center;
+	color: #fff;
+	font-size: 4.5rem;
+	margin-top: 5rem;
+	/*align-self: center;*/
+	justify-content: center;
+
+}
+
+.header__content {
+	display: grid;
+	grid-template-columns: 90vw;
+	align-content: end;
+	line-height: 1;
+	grid-row-gap: 2rem;
+	margin-bottom: 10vw;
+}
+
+.heading-3 {
+	font-size: 2.4rem;
+	}
+
+.header__logo {
+	width: 5rem;
+	justify-self: center;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#gatha, #pirith {
+  min-height: 80vh;
+}
+
+.grid-gatha-pirith{
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+   /*grid-template-rows: min-content;*/
+  
+  grid-row-gap: 5px;
+  grid-column-gap: 20px;
+  max-width: 1600px;
+  margin: 0 auto; 
 }
 
 /* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
@@ -285,7 +304,7 @@ border-radius: 0;
 
 #navbar-right {
 	justify-content: center;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 }
 
 #navbar-right span {
@@ -296,7 +315,8 @@ border-radius: 0;
 
 .heading-2 {
 	text-align: center;
-	padding: 3rem 0;
+	padding: 8rem 0 5rem;
+  font-size: 3rem;
 	}
 
 /*.accordionItemHeading:hover {

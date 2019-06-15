@@ -22,7 +22,8 @@
 .st-accordion ul li > a{
     /*font-family: 'Josefin Slab',Georgia, serif;*/
     text-shadow: 1px 1px 1px #fff;
-    font-size: 26px;
+    font-size: 22px;
+    font-weight: bold;
     display: block;
 	position: relative;
 	/*background-color: #eee;*/
@@ -97,15 +98,3 @@
 	}
 }
 */
-
-.grid{
-	display: grid;
-	grid-template-rows: min-content;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-	 /*grid-template-rows: min-content;*/
-  
-  grid-row-gap: 5px;
-  grid-column-gap: 20px;
-  max-width: 1600px;
-  margin: 0 auto; 
-}
