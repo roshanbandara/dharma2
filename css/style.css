@@ -2,7 +2,7 @@
 .wrapper{
 	width:95%;
 	/*max-width:800px;*/
-	margin: 30px auto;
+	margin: 0 auto;
 }
 .st-accordion{
     width:100%;
@@ -22,7 +22,7 @@
 .st-accordion ul li > a{
     /*font-family: 'Josefin Slab',Georgia, serif;*/
     text-shadow: 1px 1px 1px #fff;
-    font-size: 22px;
+    font-size: 23px;
     font-weight: bold;
     display: block;
 	position: relative;
